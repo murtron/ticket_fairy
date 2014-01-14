@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<string-array name="updateInterval">
+		<item name="900000">Gach 15 nóiméad</item>
+		<item name="1800000">Gach 30 nóiméad</item>
+		<item name="2700000">Gach 45 nóiméad</item>
+		<item name="3600000">Gach 60 nóiméad</item>
+		<item name="5400000">Gach 90 nóiméad</item>
+		<item name="7200000">Gach 120 nóiméad</item>		
+	</string-array>
+	
+	<string-array name="updateIntervalValues">
+		<item name="900000">900000</item>
+		<item name="1800000">1800000</item>
+		<item name="2700000">2700000</item>
+		<item name="3600000">3600000</item>
+		<item name="5400000">5400000</item>
+		<item name="7200000">7200000</item>
+	</string-array>
+
+</resources>

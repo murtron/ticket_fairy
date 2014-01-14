@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/settings_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/twitter_button"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@+id/fb_button"
+            android:layout_toRightOf="@+id/fb_button"
+            android:onClick="twitterLink"
+            android:scaleType="centerCrop"
+            android:src="@drawable/twitter_small" />
+
+        <ImageButton
+            android:id="@+id/fb_button"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignTop="@+id/gplus_button"
+            android:layout_centerHorizontal="true"
+            android:onClick="fbLink"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fbicon" />
+
+        <ImageButton
+            android:id="@+id/gplus_button"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_below="@+id/findUs"
+            android:layout_toLeftOf="@+id/fb_button"
+            android:onClick="googleLink"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gplus" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/twitter_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/about_contact"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/contactEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact"
+            android:layout_centerHorizontal="true"
+            android:text="@string/contact_email"
+            android:background="@android:color/transparent"
+            android:onClick="emailLink"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#99CCFC" />
+
+        <TextView
+            android:id="@+id/blurb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/contact"
+            android:layout_alignTop="@+id/tfLogo"
+            android:layout_toRightOf="@+id/tfLogo"
+            android:padding="10dp"
+            android:text="@string/about"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/songKick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thanks"
+            android:layout_centerHorizontal="true"
+            android:text="@string/songkick"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/devArtLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+            android:layout_below="@+id/songKick"
+            android:autoLink="web"
+            android:paddingLeft="10dp"
+            android:text="@string/clara"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/tfLogo"
+            android:layout_width="138dp"
+            android:layout_height="89dp"
+            android:layout_below="@+id/settings_text_view"
+            android:layout_toLeftOf="@+id/gplus_button"
+            android:contentDescription="@string/tfimage"
+            android:src="@drawable/tflogo" />
+
+        <TextView
+            android:id="@+id/thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactEmail"
+            android:layout_marginTop="11dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/thanks"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/findUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tfLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/find_us"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</ScrollView>

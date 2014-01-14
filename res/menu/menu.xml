@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    
+    
+    <item
+        android:id="@+id/notifications"
+        yourapp:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/alarm"
+        android:title="@string/notifications"/>
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_white"
+        android:title="@string/search_hint"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView"
+        yourapp:showAsAction="ifRoom|collapseActionView"/>
+
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/settings"/>
+
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="@string/about1"/>
+
+</menu>

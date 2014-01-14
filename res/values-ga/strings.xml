@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TicketFairy</string>
+    <string name="action_settings">Suímh Gníomhaíochta</string>
+    <string name="tweet_list">Sonraí Gig</string>
+    <string name="gig_list">Liosta Gig</string>
+    <string name="search_hint">Suímhealaíontóirí Cuardaigh</string>
+    <string name="upcoming">Le Teacht</string>
+    <string name="popular">Tóir</string>
+    <string name="notifications">Fógraí</string>
+    <string name="settings">Suímh</string>
+    <string name="artist_name">Ainm Ealaíontóir</string>
+    <string name="time">Am</string>
+    <string name="location">Suíomh</string>
+    <string name="name">Ainm</string>
+    <string name="gig_details">Sonraí Gig</string>
+    <string name="venue">Ionad</string>
+    <string name="band_name">Ainm an Bhanna</string>
+    <string name="about">TicketFairy: An app #TicketFairy le haghaidh díolta amach ceolchoirmeacha i mBaile Átha Cliath. Faigh nuashonruithe ticéad go minic ar gigs bhfuil tú ag méid seo a leanas.</string>
+    <string name="thanks">Buíochas le:</string>
+    <string name="songkick">Song Kick</string>
+    <string name="about_contact">Chun aiseolas agus moltaí, téigh i dteagmháil linn ag:</string>
+    <string name="contact_email">ticketfairyapp@gmail.com</string>
+    <string name="sending_email">Seol r-phost ag baint úsáide as</string>
+    <string name="add_resc">Acmhainní Eile</string>
+    <string name="find_us">Aimsigh Linn:</string>
+    <string name="clara">clarabellafairestock.deviantart.com/</string>
+    <string name="about1">Maidir</string>
+    <string name="on">AR</string>
+    <string name="off">AS</string>
+    <string name="preferences">Roghanna</string>
+    <string name="enable_summary">Cumasaigh nó a dhíchumasú nuashonruithe sonraí</string>
+    <string name="enable_title">Cumasaigh nuashonruithe</string>
+    <string name="interval_summary">Sainmhínigh cé chomh minic is a bheidh cothrom le dáta a dhéanamh</string>
+    <string name="interval_title">Nuashonruithe eatramh</string>
+    <string name="day">Lá</string>
+    <string name="month">Mí</string>
+    <string name="image">íomhá</string>
+    <string name="notify_me">Track an gig</string>
+    <string name="tracking">Rianú</string>
+    <string name="title_activity_new_tweets">NuaTweets</string>
+    <string name="tfimage"></string>
+    <string name="title_activity_gigs_manager">Bainisteoir Fógra</string>
+    <string name="resell">Uimh tweets go fóill. Tosaigh rianú an Gig, nó cliceáil anseo chun ticéid a cheannach ó ghníomhairí ticéad agus athdhíoltóirí!</string>
+    <string name="refresh_gig">Athnuaigh gig</string>
+    <string name="no_gigs_tracked">Nach bhfuil tú ag rianú aon gigs!</string>
+    <string name="no_gigs_tip">Bain triail as ceolchoirmeacha brabhsáil, agus nuair a fhaigheann tú ceann is mian leat a rianú, brúigh an cnaipe corcra mór go Breathnaíonn mar seo!</string>
+    <string name="last_updated">Nuashonraithe: </string>
+    <string name="last_updated_minute"> nóiméad ó shin</string>
+    <string name="last_updated_hour"> uair an chloig ó shin</string>
+    <string name="last_updated_day"> lá ó shin</string>
+    <string name="last_updated_secs">níos lú ná nóiméad ó shin</string>
+    <string name="alert_dialog_sure">An bhfuil tú cinnte?</string>
+    <string name="alert_dialog_cancel">Cealaigh</string>
+    <string name="alert_dialog_delete">Scrios</string>
+    <string name="network_error_message">Earráid Nasc Líonra</string>
+    <string name="tap_to_refresh">Beartaíonn a athnuachan</string>
+    <string name="no_results">Uimh Torthaí Aimsíodh</string>
+    <string name="no_results">Uimh ceolchoirmeacha ag teacht aníos le fáil le haghaidh</string>
+
+    <string-array name="months_array">
+        <item>Eanáir</item>
+        <item>Feabhra</item>
+        <item>Márta</item>
+        <item>Aibreán</item>
+        <item>May</item>
+        <item>Bealtaine</item>
+        <item>Iúil</item>
+        <item>Lúnasa</item>
+        <item>Meán Fómhair</item>
+        <item>Deireadh Fómhair</item>
+        <item>Samhain</item>
+        <item>Nollaig</item>
+    </string-array>
+
+</resources>

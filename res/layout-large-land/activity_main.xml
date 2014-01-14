@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="fill_parent" >
+    
+    <ListView
+        android:id="@+id/gigListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:divider="#00000000"
+        android:cacheColorHint="#eeeeee"
+        android:background="#eeeeee"
+         >
+    </ListView>    
+    
+    <TextView
+        android:id="@+id/txvw_queryError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="20sp"/>           
+        
+  	    <android.support.v4.view.ViewPager
+  	        xmlns:tools="http://schemas.android.com/tools"
+  	        android:id="@+id/pager"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:background="#eeeeee" >
+			
+			<!--  
+			This title strip will display the currently visible page title, as well as the page  
+			titles for adjacent pages.  
+			   -->
+			  
+			<android.support.v4.view.PagerTitleStrip  
+			android:id="@+id/pager_title_strip"  
+			android:layout_width="match_parent"  
+			android:layout_height="wrap_content"
+			android:background="#c800c8"
+			android:padding="15dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#ffffff"	/>
+	  
+		</android.support.v4.view.ViewPager>
+
+  	    <View
+  	        android:id="@+id/view1"
+  	        android:layout_width="20dp"
+  	        android:layout_height="20dp"
+  	        android:layout_alignParentTop="true"
+  	        android:layout_centerHorizontal="true"
+  	        android:layout_marginTop="35dp"
+  	        android:background="@drawable/triangle" />
+   
+	</RelativeLayout>     
+		
+    <fragment android:id="@+id/gigView_fragment"
+              android:layout_weight="1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+        	  android:name="com.patmoorehouse.ticket_fairy.GigViewFragment"/>	
+        	  
+    
+</LinearLayout>

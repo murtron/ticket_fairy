@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/DBGigEntryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:maxWidth="190dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:text="@string/artist_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/toggleIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+		android:layout_alignBaseline="@+id/DBGigEntryName"
+        android:layout_alignBottom="@+id/DBGigEntryName"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/togg"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="@string/on"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/deleteIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DBGigEntryName"
+        android:layout_alignBottom="@+id/DBGigEntryName"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/toggleIcon"
+        android:background="@drawable/ic_5_content_discard"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/lastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/DBGigEntryName"
+        android:text="@string/last_updated" />
+
+</RelativeLayout>

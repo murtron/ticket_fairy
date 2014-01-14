@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/tfLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bokeh"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bokeh" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="160dip"
+        android:background="@drawable/gradient" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tfLogo"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#c800c8"
+        android:padding="10dp"
+        android:text="@string/notify_me"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/location"
+        android:layout_alignLeft="@+id/location"
+        android:text="@string/time"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/gigDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time"
+        android:layout_alignLeft="@+id/time"
+        android:maxWidth="200dp"
+        android:text="@string/artist_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tfLogo"
+        android:layout_alignRight="@+id/button1"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/songkick" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_marginBottom="2dp"
+        android:text="@string/location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/reseller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dash"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:padding="30dp"
+        android:text="@string/resell"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

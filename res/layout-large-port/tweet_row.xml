@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:visibility="invisible"
+    
+     >
+
+    <TextView
+        android:id="@+id/tweetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tweetName"
+        android:layout_below="@+id/tweetName"
+        android:layout_marginRight="10dp"
+        android:text="Tweet"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/tfLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/tweetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tfLogo"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/tfLogo"
+        android:text="@string/name"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_below="@+id/tweetText"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tfLogo"
+        android:background="#dddddd" />
+
+    <TextView
+        android:id="@+id/tweetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tfLogo"
+        android:layout_toRightOf="@+id/tweetName"
+        android:paddingLeft="10dp"
+        android:text="@string/time"
+        android:textColor="#666666"
+        android:textSize="18sp"
+         />
+
+</RelativeLayout>

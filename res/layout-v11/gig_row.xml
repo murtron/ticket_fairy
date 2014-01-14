@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circle" >
+         
+    <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical" >
+         
+    <TextView
+        android:id="@+id/gigMonth"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="NOV"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/gigDay"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-2dp"
+        android:gravity="center|top"
+        android:text="15"
+        android:textColor="#c800c8"
+        android:textSize="24sp" />
+    
+    </LinearLayout>
+
+    </TableRow>
+    
+    <TextView
+        android:id="@+id/gigTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gig details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+	
+        <TextView
+            android:id="@+id/gigVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gigBandName"
+            android:layout_below="@+id/gigBandName"
+            android:paddingTop="2dp"
+            android:text="Venue"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gigBandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tableRow1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tableRow1"
+            android:maxLines="1"
+            android:paddingBottom="0dp"
+            android:text="Band Name"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_below="@+id/tableRow1"
+            android:layout_toRightOf="@+id/tableRow1"
+            android:background="#dddddd" />
+
+        <ImageView
+            android:id="@+id/tfLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tableRow1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tableRow1"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:id="@+id/gigTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gigVenue"
+            android:layout_alignBottom="@+id/gigVenue"
+            android:layout_toRightOf="@+id/gigVenue"
+            android:paddingLeft="10dp"
+            android:text="Time"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+</RelativeLayout>
